@@ -1,0 +1,12 @@
+.footer{
+    position: fixed;
+    text-align: left;
+    bottom: 25px;
+    width: 100%;
+}
+.body{
+    position: fixed;
+    text-align: left;
+    top: 25px;
+    width: 100%;
+}
