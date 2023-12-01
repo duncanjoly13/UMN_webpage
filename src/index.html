@@ -28,7 +28,8 @@
                 [<a href="https://www.linkedin.com/in/duncan-joly">LinkedIn</a>],
                 [<a href="https://scholar.google.com/citations?user=SjG5FswAAAAJ&hl=en">publications (Google Scholar)</a>],
                 [<a href="https://orcid.org/0000-0003-3058-0758">ORCiD</a>],
-                [<a href="https://duncanjoly.com">personal homepage</a>]
+                [<a href="https://duncanjoly.com">personal homepage</a>],
+                [<a href="https://dblp.uni-trier.de/pid/361/1143.html">DBLP</a>]
                 <br>
                 Files: [<a href="joly-resume.pdf" target="_blank">resume</a>],
                 [<a href="https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x6afa0af6a9981780">PGP key from the Ubuntu keyserver</a>]
@@ -59,9 +60,20 @@
             
             <h3><a name="publications">Publications</a></h3>
             <ul>
-                <li><b>Joly, Duncan</b>, Jason Carpenter, and Zhi-Li Zhang. "Examining Interplay of Compression and Encryption and
-                    Applicability to 5G Teleoperations." <br>&emsp;&emsp;&emsp;arXiv preprint <a href="https://arxiv.org/abs/2311.10936">arXiv:2311.10936</a> (2023).
-                </li>
+                <!-- This div is a placeholder which will contain the publications -->
+                <div id="pubszone">
+                    Loading publications...
+                </div>
+                <!-- Function which will handle the content received through JSONP -->
+                <script type='text/javascript'>
+                    //<![CDATA[
+                    function mycallback(ad_content) {
+                        document.getElementById('pubszone').innerHTML = ad_content.html;
+                    }
+                    //]]>
+                </script>
+                <!-- Load of the remote JS which will call the callback function -->
+                <script src="https://www.csauthors.net/duncan-joly/embed/bib.js?callback=mycallback"></script>
             </ul>
         </div>
         
