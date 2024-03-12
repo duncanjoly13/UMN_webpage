@@ -1,12 +1,4 @@
-.footer{
-    position: relative;
-    text-align: left;
-    bottom: 0;
-    width: 100%;
-}
 .body{
-    position: fixed;
-    text-align: left;
-    top: 25px;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
